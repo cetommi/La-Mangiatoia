@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-sans: "Inter", system-ui, sans-serif;
+  
+  --color-terracotta: #D4AF37;
+  --color-terracotta-light: #E9C450;
+  --color-terracotta-dark: #B8962E;
+  --color-olive: #1A1D16;
+  --color-olive-light: #8C9E7B;
+  --color-olive-dark: #11140E;
+  --color-ivory: #0F0F0F;
+  --color-ivory-dark: #161616;
+  --color-gold: #D4AF37;
+  --color-gold-dark: #B8962E;
+  --color-charcoal: #F5F5F0;
+  --color-charcoal-light: #A1A19A;
+}
+
+@layer utilities {
+  .font-serif {
+    font-family: var(--font-serif);
+  }
+  .font-sans {
+    font-family: var(--font-sans);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: var(--color-ivory);
+  color: var(--color-charcoal);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0F0F0F;
+  color: #F5F5F0;
+}
+
+/* Custom scrollbar for dark modern theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0F0F0F;
+}
+::-webkit-scrollbar-thumb {
+  background: #2A2A2A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D4AF37;
+}
+
+
